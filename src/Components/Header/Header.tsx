@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <div className="bg-[url('/header-bg.gif')] bg-center font-exo">
-      <div className="container mx-auto py-4 flex flex-row text-white justify-evenly w-custom">
+      <div className="container mx-auto py-3 flex flex-row text-white justify-evenly w-custom">
         <div className="flex flex-col w-1/6 items-center">
           <p className="text-4xl font-bold">45 минут</p>
           <p className="text-xl text-center font-bold">или пицца бесплатно</p>

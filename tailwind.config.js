@@ -7,7 +7,12 @@ export default {
         custom: '1280px',
       },
     },
-
+    colors: {
+      primary: '#ff5201',
+      white: '#fff',
+      gray: '0xA69999',
+      black: '#000000',
+    },
     container: {
       center: true,
     },
