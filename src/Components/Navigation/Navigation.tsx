@@ -5,7 +5,7 @@ import { IoCartOutline } from 'react-icons/io5';
 
 const Navigation = () => {
   return (
-    <div className="container mx-auto w-custom font-exo text-primary text-2xl font-semibold flex justify-around pt-2">
+    <div className="container mx-auto w-custom font-exo text-primary text-2xl font-semibold flex justify-around pt-2 pb-3">
       <ul className="flex justify-center gap-12 ">
         <li className="hover:text-black transition ease-out duration-500 flex flex-row items-center">
           <CiPizza />
@@ -32,7 +32,7 @@ const Navigation = () => {
         >
           <IoCartOutline />
           Корзина
-          <span className="">0p</span>
+          <span className="text-black">0p</span>
         </a>
       </p>
     </div>
