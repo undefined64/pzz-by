@@ -1,8 +1,10 @@
-import { useState } from 'react';
+interface Props {
+  activeCategory: number;
+  setActiveCategory: (value: number) => void;
+}
 
-const PizzaCategories = () => {
+const PizzaCategories = ({ activeCategory, setActiveCategory }: Props) => {
   const categories = ['все', 'мясные', 'вегетарианские', 'острые', 'барбекю'];
-  const [activeCategory, setActiveCategory] = useState(0);
 
   return (
     <div className="flex justify-center mb-5">
