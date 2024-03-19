@@ -2,38 +2,39 @@ import { CiPizza, CiCoffeeCup } from 'react-icons/ci';
 import { LiaHamburgerSolid } from 'react-icons/lia';
 import { PiBowlFood } from 'react-icons/pi';
 import { IoCartOutline } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
-    <div className="container mx-auto w-custom font-exo text-primary text-2xl font-semibold flex justify-around pt-2">
+    <div className="container mx-auto w-custom font-exo text-primary text-2xl font-semibold flex justify-around pt-2 pb-3">
       <ul className="flex justify-center gap-12 ">
         <li className="hover:text-black transition ease-out duration-500 flex flex-row items-center">
           <CiPizza />
-          <a href="">Пиццы</a>
+          <Link to={`/pzz-by`}>Пиццы</Link>
         </li>
         <li className="hover:text-black transition ease-out duration-500 flex flex-row items-center">
           <LiaHamburgerSolid />
-          <a href="">Бургеры</a>
+          <Link to={`/pzz-by/burgers`}>Бургеры</Link>
         </li>
         <li className="hover:text-black transition ease-out duration-500 flex flex-row items-center">
           <PiBowlFood />
-          <a href="">Закуски</a>
+          <Link to={`/pzz-by/snacks`}>Закуски</Link>
         </li>
 
         <li className="hover:text-black transition ease-out duration-500 flex flex-row items-center">
           <CiCoffeeCup />
-          <a href="">Напитки</a>
+          <Link to={`/pzz-by/drinks`}>Напитки</Link>
         </li>
       </ul>
       <p>
-        <a
-          href=""
+        <Link
+          to={`/pzz-by/cart`}
           className="flex items-center gap-1 hover:text-black transition ease-out duration-500"
         >
           <IoCartOutline />
           Корзина
-          <span className="">0p</span>
-        </a>
+          <span className="text-black">0p</span>
+        </Link>
       </p>
     </div>
   );

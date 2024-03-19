@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Header = () => {
   return (
     <div className="bg-[url('/header-bg.gif')] bg-center font-exo">
@@ -10,13 +12,13 @@ const Header = () => {
             бесплатно
           </p>
         </div>
-        <a className="w-1/5 self-center" href="#">
+        <Link to={`/pzz-by`} className="w-1/5 self-center">
           <img
             className="hover:scale-105 transition ease-out duration-300"
             src="./main-logo.svg"
             alt="logo"
           />
-        </a>
+        </Link>
         <div className="flex flex-col items-center justify-center transition ease-out duration-300">
           <p>A1 МТС</p>
           <a className="text-4xl font-bold" href="tel:+375297556655">

@@ -9,9 +9,11 @@ export default {
     },
     colors: {
       primary: '#ff5201',
+      primarylight: '#ff7534',
       white: '#fff',
       gray: '0xA69999',
       black: '#000000',
+      lightgray: '#D6D3D1',
     },
     container: {
       center: true,
