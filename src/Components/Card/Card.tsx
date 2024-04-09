@@ -16,7 +16,7 @@ const Card = ({ imageUrl, title, price, description, weight }: Props) => {
         className="w-60 mb-0.5 hover:-translate-y-0.5 transition ease-out duration-200"
       />
       <p className="text-2xl text-primary font-medium mb-0.5">{title}</p>
-      <p className="leading-5 mb-2">{description}</p>
+      <p className="leading-5 mb-2 mt-auto">{description}</p>
       <p className="leading-5 mb-2">Вес: {weight}г</p>
       <div className="flex justify-between mt-auto">
         <p className="text-2xl ml-1.5">{price}руб</p>
