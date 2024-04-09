@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FiPlus } from 'react-icons/fi';
+
 interface Props {
   imageUrl: string;
   title: string;
